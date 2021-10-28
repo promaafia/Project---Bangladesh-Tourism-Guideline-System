@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+.mapdiv{
+    width: 300px;
+    height:300px;
+   
+}
+
+.mapv{
+   width: 300px;
+    height:300px; 
+     float:left;
+    
+}

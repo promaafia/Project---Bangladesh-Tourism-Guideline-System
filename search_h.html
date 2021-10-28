@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+		<title>bdtourist.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet"  href="link/style.css">
+        <link href='link/link.css' rel='stylesheet'>
+         <link href='link/img.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+        
+        *{
+box-sizing:border-box;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+        
+        </style>
+		
+	</head>
+	
+	<body>
+       
+        <div class="cont">
+        <div class="header">
+        <div class="headf">
+   
+       <p> <a href = "project.html">  <img src="Video/logo.jpg" alt="Mountain View" width="200px" height="100px" > </a></p>
+        
+        </div>
+        <div class="heads"> 
+            
+            <div class="headsf"> 
+                
+                <div class="ept"></div>
+                <div class="blk"></div>
+                <div class="fac">  <a href = "https://www.facebook.com/" target="_blank"> <p><img src="Video/facebook.jpg" alt="Facebook Logo" width="50px" height="40px" > </p> </a>
+                   </div>
+                <div class="blk"></div>
+                <div class="twi"><a href = "https://www.twitter.com/"target="_blank">   <p><img src="Video/twitter.jpg" alt="Twitte Logo" width="50px" height="40px" > </p> </a> </div>
+                 <div class="blk"></div>
+                <div class="goo"> <a href = "https://plus.google.com/"target="_blank">  <p><img src="Video/Google.jpg" alt="Google Logo" width="50px" height="40px" > </p></a>  </div>
+                 <div class="blk"></div>
+                <div class="you"> <a href = "https://youtube.com/"target="_blank">  <p><img src="Video/youtube.jpg" alt="Google Logo" width="50px" height="40px" > </p></a>  </div>
+                
+                </div>
+               
+            <div class="headss">
+                <div class="headssf"></div>
+                 <div class="headsss">
+                     <div class="log">  <h4><a href = "#">Login</a></h4></div>
+                     <div class="reg"> <a href = "#">  <h4>Register</h4></a></div>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+
+		<div class="bar">
+            <div class="spc"></div>
+            <div class="home">
+    <li><a href = "project.html">Home</a></li>
+	<li><a href = "tour.html">Tour</a></li>
+	<li><a href = "hotel.html">Hotel</a></li>
+	<li><a href = "emergency.php">Emergency</a></li>
+    <li><a href = "map.html">Maps</a></li>
+	<li><a href = "about.html">About</a></li>
+    <li style="float: right"><a href = "search.html">Search</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+        <div class="imageset">
+            <div class="slideshow-container">
+
+<div class="mySlides fade">
+    
+  <div class="numbertext">1 / 3</div>
+  <img src="img/e.jpg" height=340px width=100%px >
+  <div class="text"> Meghalaya </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/a.jpg" height=340px width=100%>
+  <div class="text">Natural View</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/d.jpg" height=340px width=100%>
+  <div class="text">Sangsad Vhaban</div>
+</div>
+
+                
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        </div>
+          <div class="search">
+              
+              
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+    
+            <li><a href="https://www.google.com/maps/place/Pan+Pacific+Sonargaon+Dhaka+Hotel/@23.7495859,90.3923203,17z/data=!3m1!4b1!4m7!3m6!1s0x3755b897e97a02b9:0x27f34ccd83ba6ede!5m1!1s2018-05-03!8m2!3d23.749581!4d90.394509?hl=en-US" target="_blank">Pan Pacific Sonargaon Hotel</a></li>
+			<li><a href="https://www.google.com/maps/place/Radisson+Blu+Dhaka+Water+Garden/@23.8160459,90.4065313,17z/data=!3m1!4b1!4m7!3m6!1s0x3755c6feb6c1b7b1:0x76350c55ebc50c34!5m1!1s2018-05-03!8m2!3d23.816041!4d90.40872?hl=en-US" target="_blank">Radisson Blu Dhaka Water Garden</a></li>
+			<li><a href="https://www.google.com/maps/place/Best+Western+La+Vinci+Hotel/@23.7540515,90.3900307,17z/data=!3m1!4b1!4m7!3m6!1s0x3755b8a2bca28c23:0x77501dc198adfc45!5m1!1s2018-05-03!8m2!3d23.7540466!4d90.3922194?hl=en-US" target="_blank">Best Western La Vinci Hotel</a></li>
+			<li><a href="https://www.google.com/maps/place/The+Westin+Dhaka/@23.7933176,90.4124613,17z/data=!3m1!4b1!4m7!3m6!1s0x3755c7a72f17bb83:0x57188ff62fd95026!5m1!1s2018-05-03!8m2!3d23.7933127!4d90.41465?hl=en-US" target="_blank">The Westin Hotel</a></li>
+			<li><a href="https://www.google.com/maps/place/Hotel+Sarina/@23.7933776,90.4024853,17z/data=!3m1!4b1!4m7!3m6!1s0x3755c70e6feceb73:0xc7c4d387a200cadc!5m1!1s2018-05-03!8m2!3d23.7933727!4d90.404674?hl=en-US" target="_blank">Hotel Sarina</a></li>
+            <li><a href="https://www.google.com/maps/place/Hotel+Abakash/@23.7770401,90.3851615,13.25z/data=!4m13!1m5!2m4!1sAbakash+Parjatan+Hotel!5m2!5m1!1s2018-05-03!3m6!1s0x3755c77201f61fbd:0x4e28597478f812d9!5m1!1s2018-05-03!8m2!3d23.7805905!4d90.4033971?hl=en-US" target="_blank">Abakash Parjatan Hotel </a></li>  
+            <li><a href="https://www.google.com/maps/place/Ambala+Inn/@23.7383706,90.3754471,17z/data=!3m1!4b1!4m5!3m4!1s0x3755b8ca648b9da9:0xe799dbf865651689!8m2!3d23.7383657!4d90.3776358?hl=en-US" target="_blank">Ambala Inn </a></li> 
+            <li><a href="https://www.google.com/maps/place/Asianet+Limited+(GSA-+The+Oberoi+Hotels+%26+Resorts,+India)/@23.7622728,90.3802011,14z/data=!4m8!1m2!2m1!1sAsianet+Ltd+dhaka!3m4!1s0x0:0xaac7bd9ddd2d1a8f!8m2!3d23.774766!4d90.4146159?hl=en-US" target="_blank">Asianet Ltd</a></li> 
+            <li><a href="https://www.google.com/maps/place/BRAC+Centre+Inn/@23.7798849,90.4080683,17z/data=!3m1!4b1!4m7!3m6!1s0x3755c76c2b644a59:0x5e4427ef8d303475!5m1!1s2018-04-06!8m2!3d23.77988!4d90.410257?hl=en-US" target="_blank">BRAC Center Inn </a></li> 
+            <li><a href="https://www.google.com/maps/place/Hotel+Lake+Castle/@23.8020329,90.4064953,17z/data=!3m1!4b1!4m7!3m6!1s0x3755c7068c2f37c7:0x320261a83b589476!5m1!1s2018-04-12!8m2!3d23.802028!4d90.408684?hl=en-US" target="_blank">Hotel Lake Castle</a></li>
+    
+    
+          
+			<li><a href="https://www.google.com/maps/place/Hotel+Red+Castle/@24.3663237,88.5920099,17z/data=!3m1!4b1!4m5!3m4!1s0x39fbef077576c9e1:0x7e826488729088e7!8m2!3d24.3663237!4d88.5941986?hl=en-US" target="_blank">Hotel Red Castle</a></li>
+			<li><a href="https://www.google.com/maps/place/Hotel+Nice+International,+Rajshahi/@24.3654494,88.5990085,17z/data=!3m1!4b1!4m7!3m6!1s0x39fbefaf3c78d767:0x99917b63f27f916e!5m1!1s2018-03-31!8m2!3d24.3654494!4d88.6011972?hl=en-US" target="_blank">Hotel Nice Int</a></li>
+			<li><a href="https://www.google.com/maps/place/Rajmahal+Hotel,+Banik+Para,+Barsapara,+Guwahati,+Assam+781034/@26.142621,91.7396523,17z/data=!3m1!4b1!4m5!3m4!1s0x375a5bef2853c76d:0xd66d5dbbf0c9d79d!8m2!3d26.142621!4d91.741841?hl=en-US" target="_blank">Hotel Rajmahal</a></li>
+			<li><a href="https://www.google.com/maps/place/Chez+Razzak+Suites/@24.3775035,88.6223759,17z/data=!3m1!4b1!4m7!3m6!1s0x39fbee2d64b89765:0x4c0808423a9e874d!5m1!1s2018-03-31!8m2!3d24.3775035!4d88.6245646?hl=en-US" target="_blank">Hotel Chez Razzak Service</a></li>
+			<li><a href="https://www.google.com/maps/place/Hotel+Mukta+Int./@24.3669496,88.5981639,17z/data=!3m1!4b1!4m7!3m6!1s0x39fbefaed1908901:0x51ef4171bc5dea48!5m1!1s2018-03-31!8m2!3d24.3669496!4d88.6003526?hl=en-US" target="_blank">Hotel Mukta Int</a></li>
+			<li><a href="https://www.google.com/maps/place/Hotel+Dallas+Rd,+Rajshahi,+Bangladesh/@24.37388,88.6016491,17z/data=!3m1!4b1!4m5!3m4!1s0x39fbefad3f104973:0xf4d9a3b6a008a369!8m2!3d24.37388!4d88.6038378?hl=en-US" target="_blank">Hotel Dalas</a></li>
+            <li><a href="https://www.google.com/maps/place/Hotel+Al-Arafah/@24.3736507,88.600714,17z/data=!3m1!4b1!4m5!3m4!1s0x39fbefad5f0ed36d:0x5cb3c10ce9e1450c!8m2!3d24.3736507!4d88.6029027?hl=en-US" target="_blank">Hotel Al-Arafah </a></li> 
+            <li><a href="https://www.google.com/maps/place/Haq's+Inn/@24.3742545,88.6103995,17z/data=!3m1!4b1!4m5!3m4!1s0x39fbefb52370f2e9:0xb1bfb84e105edecc!8m2!3d24.3742545!4d88.6125882?hl=en-US" target="_blank">Haq's Inn </a></li> 
+            <li><a href="https://www.google.com/maps/search/Hotel+Mid+Town+International/@24.3701048,88.5978119,16z/data=!3m1!4b1?hl=en-US" target="_blank">Hotel Mid Town International </a></li> 
+    
+    
+    
+    
+    
+    
+      <li><a href="https://www.google.com/maps/place/Hotel+Agrabad/@22.326935,91.8146117,18z/data=!4m10!1m2!2m1!1sHotel+Agrabad!3m6!1s0x30acd8b46373368d:0x7f0aa59b4138e5b3!5m1!1s2018-04-12!8m2!3d22.326918!4d91.816217?hl=en-US" target="_blank"> Hotel Agrabad</a></li>
+                <li><a href="https://www.google.com/maps/place/Orchid+Business+Hotel/@22.330798,91.8099144,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8c9e3129b55:0x10e394c752267cf8!5m1!1s2018-04-12!8m2!3d22.3307931!4d91.8121031?hl=en-US" target="_blank">Orchid Business Hotel</a></li>
+                <li><a href="https://www.google.com/maps/place/Avenue+Hotel+%26+Suites/@22.3474511,91.8178108,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8bd7df639a7:0xf7c8dc89ac6deddb!5m1!1s2018-04-12!8m2!3d22.3474462!4d91.8199995?hl=en-US" target="_blank">Avenue Hotel & Suites</a></li>
+                <li><a href="https://www.google.com/maps/place/The+Peninsula+Chittagong/@22.3577485,91.8197031,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd89074e602c5:0xa3b4f22b24d5a4b6!5m1!1s2018-04-12!8m2!3d22.3577436!4d91.8218918?hl=en-US" target="_blank">The Peninsula Chittagong</a></li>
+                <li><a href="https://www.google.com/maps/place/Asian+SR+Hotel/@22.3356619,91.8266803,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8a628f2e351:0x51adc9ebac122d83!5m1!1s2018-04-12!8m2!3d22.335657!4d91.828869?hl=en-US" target="_blank">Asian SR Hotel</a></li> 
+                <li><a href="https://www.google.com/maps/place/Radisson+Blu+Chittagong+Bay+View/@22.3482815,91.8207102,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8a2a645ee07:0x2a94a4fa61c7b1a3!5m1!1s2018-04-12!8m2!3d22.3482766!4d91.8228989?hl=en-US" target="_blank">Radisson Blu Chittagong Bay View</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Al-Faisal+International+Limited/@22.3416597,91.8254323,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8a14d913adf:0xd4f253d8095b3992!5m1!1s2018-04-12!8m2!3d22.3416548!4d91.827621?hl=en-US" target="_blank">Hotel Al-Faisal International Ltd.</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Tower+Inn/@22.3382077,91.8281712,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8a773d39fc5:0xdd29f76e8975ec91!5m1!1s2018-04-12!8m2!3d22.3382028!4d91.8303599?hl=en-US" target="_blank">Hotel Tower Inn</a></li> 
+                <li><a href="https://www.google.com/maps/place/Naba+Inn/@22.3611299,91.8215363,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd8853bf92f6d:0x25f665d8ba2af7c3!5m1!1s2018-04-12!8m2!3d22.361125!4d91.823725?hl=en-US" target="_blank">Naba Inn</a></li> 
+                 <li><a href="https://www.google.com/maps/place/Hotel+Lord's+Inn/@22.3626697,91.8185601,17z/data=!3m1!4b1!4m7!3m6!1s0x30acd88f0c765423:0x3526bc1611c2b67e!5m1!1s2018-04-12!8m2!3d22.3626648!4d91.8207488?hl=en-US" target="_blank">Hotel Lord's Inn</a></li>
+         
+    
+    
+    
+    
+    
+    
+    
+     <li><a href="https://www.google.com/maps/place/Hotel+Millennium/@22.8208463,89.548557,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff9007f339ced9:0xb52a48c391c929d3!5m1!1s2018-04-12!8m2!3d22.8208414!4d89.5507457?hl=en-US" target="_blank">Hotel Millennium</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Jalico/@22.8154991,89.5620181,17z/data=!3m1!4b1!4m5!3m4!1s0x39ff901ead1f4a6f:0xb9e9243a7a31bffa!8m2!3d22.8154942!4d89.5642068?hl=en-US" target="_blank">Hotel Jalico</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Castle+Salam/@22.8099346,89.5602679,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff8fe275fc00bd:0x3f94e2af82de2986!5m1!1s2018-04-12!8m2!3d22.8099297!4d89.5624566?hl=en-US" target="_blank">Hotel Castle Salam Ltd.</a></li>
+                <li><a href="https://www.google.com/maps/place/Western+Inn+International+Ltd/@22.8137411,89.5645597,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff901f1044c4ff:0x69e05ca7009efb4d!5m1!1s2018-04-12!8m2!3d22.8137362!4d89.5667484?hl=en-US" target="_blank">Western Inn International Ltd</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Royal+International/@22.8103937,89.5597722,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff901d843098eb:0x202d5a0ce395b001!5m1!1s2018-04-12!8m2!3d22.8103888!4d89.5619609?hl=en-US" target="_blank">Hotel Royel International</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Sunday/@22.8204085,89.5550568,18z/data=!4m13!1m5!2m4!1sHotel+Sunday+International+khulna!5m2!5m1!1s2018-04-12!3m6!1s0x39ff9005bd3c88af:0xc4d64cc7f907a10e!5m1!1s2018-04-12!8m2!3d22.8201309!4d89.5561381?hl=en-US" target="_blank">Hotel Sunday International</a></li> 
+                <li><a href="https://www.google.com/maps/place/Tiger+Garden+International+Hotel/@22.8212324,89.5509088,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff9006183d8007:0xd9eedc51c95adefc!5m1!1s2018-04-12!8m2!3d22.8212275!4d89.5530975?hl=en-US" target="_blank">Hotel Tiger Garden</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Basundhara/@23.6705343,87.675023,17z/data=!3m1!4b1!4m7!3m6!1s0x39f9dc958e3ad301:0x8124cb386befe5df!5m1!1s2018-04-12!8m2!3d23.6705294!4d87.6772117?hl=en-US" target="_blank">Hotel Basundhara </a></li> 
+                <li><a href="https://www.google.com/maps/place/Arafat+Hotel+International/@22.8170554,89.5618179,17z/data=!3m1!4b1!4m5!3m4!1s0x39ff90195f33928b:0x2a7393d09289845a!8m2!3d22.8170505!4d89.5640066?hl=en-US" target="_blank">Hotel Arafat International</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Arcadia/@22.816699,89.5586586,17z/data=!3m1!4b1!4m5!3m4!1s0x39ff901b6f853d2d:0x72f184c316f68d29!8m2!3d22.8166941!4d89.5608473?hl=en-US" target="_blank">Hotel Arcadia</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Ambassador/@22.8178808,89.5612133,17z/data=!3m1!4b1!4m7!3m6!1s0x39ff901bd6bb0073:0x3136ed69136c4120!5m1!1s2018-04-15!8m2!3d22.8178759!4d89.563402?hl=en-US" target="_blank">Hotel Ambassador</a></li>
+
+    
+    
+    
+    
+    
+     <li><a href="https://www.google.com/maps/place/Britannia+Hotel/@24.9044458,91.8672773,17z/data=!3m1!4b1!4m7!3m6!1s0x37505527d8db6e9b:0xa800602f348aa226!5m1!1s2018-04-12!8m2!3d24.904441!4d91.869466?hl=en-US" target="_blank">Britannia Hotel</a></li>
+                <li><a href="https://www.google.com/maps/place/Nirvana+Inn/@24.8932339,91.8615204,17z/data=!3m1!4b1!4m7!3m6!1s0x3750552cd77aff43:0x77aa5c2368933e2d!5m1!1s2018-04-12!8m2!3d24.8934769!4d91.8637697?hl=en-US" target="_blank">Nirvana Inn</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Fortune+Garden/@24.8952222,91.8751859,17z/data=!3m1!4b1!4m7!3m6!1s0x375054d30bd207a1:0x869b9711441201aa!5m1!1s2018-04-12!8m2!3d24.8952174!4d91.8773746?hl=en-US" target="_blank">Hotel Fortune Garden</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Holy+Gate/@24.9021,91.867142,17z/data=!3m1!4b1!4m7!3m6!1s0x375055284f336129:0x8adff902cb9f5b0c!5m1!1s2018-04-12!8m2!3d24.9020952!4d91.8693307?hl=en-US" target="_blank">Hotel Holy Gate</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Metro+International/@24.8921281,91.8730975,17z/data=!3m1!4b1!4m7!3m6!1s0x3751ab2b53d501c1:0x9e0d199543edbd75!5m1!1s2018-04-12!8m2!3d24.8921232!4d91.8752862?hl=en-US" target="_blank">Hotel Metro International</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Anurag/@24.8951565,91.8739736,17z/data=!3m1!4b1!4m5!3m4!1s0x375054d37971fe8b:0x8b7417b38c3366ec!8m2!3d24.8951517!4d91.8761623?hl=en-US" target="_blank">Hotel Anurag Limited </a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Dallas/@24.8955354,91.8720879,17z/data=!3m1!4b1!4m5!3m4!1s0x375054d458daac77:0x37c49920379b1fae!8m2!3d24.8955306!4d91.8742766?hl=en-US" target="_blank">Hotel Dallas</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Golden+City/@24.8951154,91.8681639,17z/data=!3m1!4b1!4m7!3m6!1s0x3750552a8f51bed9:0x333a8449c7d65728!5m1!1s2018-04-06!8m2!3d24.8951105!4d91.8703526?hl=en-US" target="_blank">Hotel Golden City </a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Garden+Inn/@24.8849329,91.8782061,17z/data=!3m1!4b1!4m7!3m6!1s0x3751ab31e02a9a35:0xcd6b4771364bbb97!5m1!1s2018-04-06!8m2!3d24.884928!4d91.8803948?hl=en-US" target="_blank">Hotel Garden Inn</a></li> 
+                 <li><a href="https://www.google.com/maps/place/Hotel+Star+Pacific/@24.901851,91.8665398,17z/data=!3m1!4b1!4m7!3m6!1s0x3750552856acd63f:0x99ae707f372ece7f!5m1!1s2018-04-06!8m2!3d24.9018462!4d91.8687285?hl=en-US" target="_blank">Hotel Star Pacific</a></li>
+                 <li><a href="https://www.google.com/maps/place/Hotel+Valley+Garden/@24.8900317,91.8762709,17z/data=!3m1!4b1!4m7!3m6!1s0x3751ab2d04b067db:0x35ee4a2043938758!5m1!1s2018-04-12!8m2!3d24.8900268!4d91.8784596?hl=en-US" target="_blank">Hotel Valley Garden</a></li>
+		
+    
+    
+    
+    
+    
+    
+     <li><a href="https://www.google.com/maps/place/Hotel+North+View/@25.7499996,89.253509,17z/data=!4m12!1m6!3m5!1s0x39e32dfca8bfb9a3:0xccecea8914c50f7d!2sHotel+North+View!8m2!3d25.7499948!4d89.2556977!3m4!1s0x39e32dfca8bfb9a3:0xccecea8914c50f7d!8m2!3d25.7499948!4d89.2556977?hl=en-US" target="_blank">Hotel North View</a></li>
+                <li><a href="https://www.google.com/maps/place/RDRS+Guest+House/@25.7600214,89.2392209,17z/data=!3m1!4b1!4m5!3m4!1s0x39e331fec96dee57:0x3f383ac4f07c0008!8m2!3d25.7600166!4d89.2414096?hl=en-US" target="_blank">RDRS Guest House</a></li>
+                <li><a href="https://www.google.com/maps/place/Sagorica+Hotel+%26+Restaurant/@25.7166778,89.2613231,17z/data=!4m8!1m2!2m1!1sSagorica+Hotel+%26+Restaurant!3m4!1s0x0:0x8504db22cc281650!8m2!3d25.7169074!4d89.2630041?hl=en-US" target="_blank">Sagorica Hotel & Restaurant</a></li>
+                <li><a href="https://www.google.com/maps/place/Parjaton+Motel/@25.7484751,89.2281887,17z/data=!3m1!4b1!4m5!3m4!1s0x39e332193e938b85:0x1187023fb0641215!8m2!3d25.7484703!4d89.2303774?hl=en-US" target="_blank">Parjaton Motel</a></li>
+                <li><a href="https://www.google.com/maps/place/The+Park+Residential+Hotel/@25.7488121,89.2530157,17z/data=!4m8!1m2!2m1!1sGolden+Tower+Shopping+Mall+khulna!3m4!1s0x0:0xbe680ff79a939fcb!8m2!3d25.7483279!4d89.2564809?hl=en-US" target="_blank">The Park Residential Hotel</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Green+View+Residential/@25.7472141,89.2519942,17z/data=!3m1!4b1!4m5!3m4!1s0x39e32dfb043d526b:0x97e3f6b92f917b24!8m2!3d25.7472093!4d89.2541829?hl=en-US" target="_blank">Hotel Green View Residential</a></li>
+                 <li><a href="https://www.google.com/maps/place/Hotel+Rajanigandha/@25.7489318,89.2525649,17z/data=!3m1!4b1!4m5!3m4!1s0x39e32dfb68adc13b:0x4a5eb0f119f157e!8m2!3d25.748927!4d89.2547536?hl=en-US" target="_blank">Hotel Rajanigandha</a></li>
+                 <li><a href="https://www.google.com/maps/place/Tilottama+Hotel/@25.7473019,89.2495557,18z/data=!4m8!1m2!2m1!1shotels+in+Rangpur!3m4!1s0x39e32df90cf49d53:0xbc8a6f7a072114d!8m2!3d25.7471175!4d89.2501321?hl=en-US" target="_blank">Tilottama Hotel</a></li>
+                 <li><a href="https://www.google.com/maps/place/Hotel+Greenway/@25.749974,89.2512653,17z/data=!3m1!4b1!4m5!3m4!1s0x39e32dfc79136c87:0xc5250edea8125db5!8m2!3d25.7499692!4d89.253454?hl=en-US" target="_blank">Hotel Greenway</a></li>
+
+    
+    
+    
+    
+    
+    
+    
+    
+      <li><a href="https://www.google.com/maps/place/Hotel+Grand+Park+Barisal/@22.6914839,90.3665523,17z/data=!3m1!4b1!4m7!3m6!1s0x3755340ccb9574fb:0x215be985c2c99007!5m1!1s2018-04-12!8m2!3d22.691479!4d90.368741?hl=en-US" target="_blank">Hotel Grand Plaza</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Paradise+Two+International/@22.7091104,90.3648207,17z/data=!3m1!4b1!4m5!3m4!1s0x375534036958bf89:0x183e048c4d1e7694!8m2!3d22.7091055!4d90.3670094?hl=en-US" target="_blank">Hotel Paradise Two International</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Sakura/@22.7028343,90.372572,18z/data=!4m8!1m2!2m1!1sHotel+Sakura+barisal!3m4!1s0x37553407df5ce3af:0xe5c07ef76a739888!8m2!3d22.7028999!4d90.3734279?hl=en-US" target="_blank">Hotel Sakura</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Athena+International/@22.7053082,90.3690853,17z/data=!3m1!4b1!4m5!3m4!1s0x37553407ad3b358b:0x5a7a31d9ac3c64a0!8m2!3d22.7053033!4d90.371274?hl=en-US" target="_blank">Hotel Athena International</a></li>
+                <li><a href="https://www.google.com/maps/place/Hotel+Ababil/@22.7017913,90.3674905,17z/data=!3m1!4b1!4m5!3m4!1s0x3755340f4f29adeb:0x8d0d08ee96de0d93!8m2!3d22.7017864!4d90.3696792?hl=en-US" target="_blank">Hotel Ababil</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Ali+International/@22.70584,90.368257,17z/data=!3m1!4b1!4m5!3m4!1s0x375534067df91ef3:0xc67768c799f5ee65!8m2!3d22.7058351!4d90.3704457?hl=en-US" target="_blank">Ali International Hotel</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Sedona+International/@22.7067097,90.3698312,18z/data=!4m8!1m2!2m1!1shotels+in+Barisal,+Bangladesh!3m4!1s0x375534068f79e5b7:0x5d00fb8f75d1f6b8!8m2!3d22.7063862!4d90.370751?hl=en-US" target="_blank">Hotel Sedona International</a></li> 
+                <li><a href="https://www.google.com/maps/place/Hotel+Nupur+Private+Limited/@22.706505,90.3703353,17z/data=!3m1!4b1!4m5!3m4!1s0x3755340702bd6ca7:0xa6788f7eb3f6dd4b!8m2!3d22.7065001!4d90.372524?hl=en-US" target="_blank">Hotel Nupor</a></li> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="https://www.google.com/maps/place/Hotel+Amir+Int./@24.755455,90.4095274,19z/data=!4m12!1m6!3m5!1s0x37564f00d617a9c5:0xc13982e5ff8297d7!2sHotel+Amir+Int.!8m2!3d24.7554477!4d90.4100638!3m4!1s0x37564f00d617a9c5:0xc13982e5ff8297d7!8m2!3d24.7554477!4d90.4100638?hl=en-US" target="_blank">Hotel Amir International</a></li>
+			         <li><a href="https://www.google.com/maps/place/Nirala+Guest+House/@24.7574611,90.4087901,17z/data=!3m1!4b1!4m5!3m4!1s0x37564f00ee17adf1:0x91ba989b5fc9faf8!8m2!3d24.7574562!4d90.4109788?hl=en-US" target="_blank">Nirala Guest House</a></li>
+                    <li><a href="https://www.google.com/maps/place/Hotel+Khan+International/@24.7491476,90.3614762,13z/data=!4m13!1m5!2m4!1shotels+in+Mymensingh!5m2!5m1!1s2018-04-12!3m6!1s0x37564f00cb644439:0x606566297e3a5c9a!5m1!1s2018-04-12!8m2!3d24.755426!4d90.4110086?hl=en-US" target="_blank">Hotel Khan International</a></li> 
+                    <li><a href="https://www.google.com/maps/place/Tajmahal+Hotel/@24.7546207,90.4100902,18z/data=!4m15!1m6!2m5!1shotels+in+Mymensingh+District!5m3!5m2!1s2018-04-11!2i2!3m7!1s0x37564f07303ba549:0x721fca4cb224ba7d!5m2!1s2018-04-11!2i2!8m2!3d24.7546698!4d90.4107991?hl=en-US" target="_blank">Tajmahal Hotel</a></li> 
+                 <li><a href="https://www.google.com/maps/place/Ishakh+Hotel+%26+Restaurant/@24.7529693,90.4087437,18z/data=!4m15!1m6!2m5!1shotels+in+Mymensingh+District!5m3!5m2!1s2018-04-11!2i2!3m7!1s0x0:0x750bb3ef13fd666!5m2!1s2018-04-11!2i2!8m2!3d24.7527857!4d90.4090168?hl=en-US" target="_blank">Ishakh Hotel & Restaurant</a></li>
+                    <li><a href="https://www.google.com/maps/place/Tepantor+Princess+Hotel+%26+Resort/@24.3015275,90.3778127,15z/data=!4m13!1m5!2m4!1shotels+in+Mymensingh+District!5m2!5m1!1s2018-04-12!3m6!1s0x3756719109d1a559:0x92af47ca5d927a3f!5m1!1s2018-04-12!8m2!3d24.3015275!4d90.3865674?hl=en-US" target="_blank">Tepantor Princess Hotel & Resort</a></li> 
+                    <li><a href="https://www.google.com/maps/place/Silver+Castle+Brahmaputra+Resort+Limited/@24.7791471,90.3643793,17z/data=!4m13!1m5!2m4!1shotels+in+Mymensingh+District!5m2!5m1!1s2018-04-12!3m6!1s0x375649372e014db7:0xd76a37f5ccd40061!5m1!1s2018-04-12!8m2!3d24.7795343!4d90.3672031?hl=en-US" target="_blank">Silver Castle Brahmaputra Resort Limited</a></li> 
+                    <li><a href="https://www.google.com/maps/place/Hotel+Mustafiz+International/@24.7491476,90.3614762,13z/data=!4m13!1m5!2m4!1shotels+in+Mymensingh!5m2!5m1!1s2018-04-12!3m6!1s0x37564ee260d98329:0xe96b16c6bb1d744a!5m1!1s2018-04-12!8m2!3d24.7625701!4d90.4004893?hl=en-US" target="_blank">Hotel Mustafiz International</a></li> 
+                    <li><a href="https://www.google.com/maps/place/Hotel+Uttara+(%E0%A6%B9%E0%A7%8B%E0%A6%9F%E0%A7%87%E0%A6%B2+%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE)/@24.7567629,90.4078793,19z/data=!4m8!1m2!2m1!1sUttara+Hotel+mymensingh!3m4!1s0x37564f015cfa4c45:0x1c81f1547a32dd33!8m2!3d24.7565571!4d90.4082721?hl=en-US" target="_blank">Uttara Hotel</a></li> 
+    
+    
+    
+</ul>
+
+<script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+          </script>  
+            
+            </div>  
+            
+    
+        </div>
+            
+      
+        
+	</body>
+</html>

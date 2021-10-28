@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+		<title>bdtourist.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet"  href="link/style.css">
+        <link href='link/link.css' rel='stylesheet'>
+         <link href='link/img.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+        
+        *{
+box-sizing:border-box;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+        
+        </style>
+		
+	</head>
+	
+	<body>
+       
+        <div class="cont">
+        <div class="header">
+        <div class="headf">
+   
+       <p> <a href = "project.html">  <img src="Video/logo.jpg" alt="Mountain View" width="200px" height="100px" > </a></p>
+        
+        </div>
+        <div class="heads"> 
+            
+            <div class="headsf"> 
+                
+                <div class="ept"></div>
+                <div class="blk"></div>
+                <div class="fac">  <a href = "https://www.facebook.com/" target="_blank"> <p><img src="Video/facebook.jpg" alt="Facebook Logo" width="50px" height="40px" > </p> </a>
+                   </div>
+                <div class="blk"></div>
+                <div class="twi"><a href = "https://www.twitter.com/"target="_blank">   <p><img src="Video/twitter.jpg" alt="Twitte Logo" width="50px" height="40px" > </p> </a> </div>
+                 <div class="blk"></div>
+                <div class="goo"> <a href = "https://plus.google.com/"target="_blank">  <p><img src="Video/Google.jpg" alt="Google Logo" width="50px" height="40px" > </p></a>  </div>
+                 <div class="blk"></div>
+                <div class="you"> <a href = "https://youtube.com/"target="_blank">  <p><img src="Video/youtube.jpg" alt="Google Logo" width="50px" height="40px" > </p></a>  </div>
+                
+                </div>
+               
+            <div class="headss">
+                <div class="headssf"></div>
+                 <div class="headsss">
+                     <div class="log">  <h4><a href = "#">Login</a></h4></div>
+                     <div class="reg"> <a href = "#">  <h4>Register</h4></a></div>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+
+		<div class="bar">
+            <div class="spc"></div>
+            <div class="home">
+                <ul>
+	<li><a href = "project.html">Home</a></li>
+	<li><a href = "tour.html">Tour</a></li>
+	<li><a href = "hotel.html">Hotel</a></li>
+	<li><a href = "emergency.php">Emergency</a></li>
+    <li><a href = "map.html">Maps</a></li>
+	<li><a href = "about.html">About</a></li>
+    <li style="float: right"><a href = "search.html">Search</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+        <div class="imageset">
+            <div class="slideshow-container">
+
+<div class="mySlides fade">
+    
+  <div class="numbertext">1 / 3</div>
+  <img src="img/e.jpg" height=340px width=100%px >
+  <div class="text"> Meghalaya </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/a.jpg" height=340px width=100%>
+  <div class="text">Natural View</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/d.jpg" height=340px width=100%>
+  <div class="text">Sangsad Vhaban</div>
+</div>
+
+                
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        </div>
+          <div class="search">
+              
+              
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+    
+    
+<li><a href="dha%20lalbagh.html">Lalbagh Fort</a></li>
+			<li><a href="dha%20Ahsan%20Manzil%20Palace%20Museum.html">Ahsan Manzil Palace Museum</a></li>
+			<li><a href="dha%20Jatiyo%20Smriti%20Soudho.html">Jatiyo Smriti Soudho</a></li>
+			<li><a href="dha%20Star%20Mosque(Tara%20Masjid).html">Star Mosque(Tara Masjid)</a></li>
+            <li><a href="dha%20sat%20masjid.html">Satmasjid</a></li>
+			<li><a href="dha%20Dhakeshwari%20Temple.html">Dhakeshwari Temple</a></li>
+			<li><a href="dha%20Khan%20Mohammad%20Mridha's%20Mosque.html">Khan Mohammad Mridha's Mosque</a></li>
+			<li><a href="dha%20Armenian%20Church.html">Armenian Church</a></li>
+			<li><a href="dha%20Sadarghat%20River%20Port.html">Sadarghat River Port</a></li>
+            <li><a href="dha%20national%20zoo.html">National Zoo</a></li>
+            <li><a href="dha%20Curzon%20Hall.html">Curzon Hall</a></li>
+            <li><a href="dha%20dhaka%20university.html">Dhaka University</a></li>
+            <li><a href="dha%20Sonargaon%20Museum.html">Sonargaon Museum</a></li>
+            <li><a href="dha%20national%20museum.html">Bangladesh National Museum</a></li>
+            <li><a href="dha%20central%20sahid%20minar.html">Central Shaheed Minar</a></li>
+            <li><a href="dha%20National%20Parliament%20House.html">National Parliament House</a></li>
+    
+    
+    
+     <li><a href="raj%20Saha%20Mokhdum%20Mazar.html">Saha Mokhdum Mazar</a></li>
+			<li><a href="raj%20Bagha%20Mosque.html">Bagha Mosque</a></li>
+			<li><a href="raj%20Varendra%20Research%20Museum.html">Varendra Research Museum</a></li>
+			<li><a href="raj%20Bhuban%20Mohan%20Park.html">Bhuban Mohan Park</a></li>
+			<li><a href="raj%20River%20of%20Padma.html">River of Padma</a></li>
+			<li><a href="raj%20Rajshahi%20Sugar%20Mill.html">Rajshahi Sugar Mill</a></li>
+			<li><a href="raj%20Boro%20Kuthi.html">Boro Kuthi</a></li>
+			<li><a href="raj%20Bangladesh%20Police%20Academy.html">Bangladesh Police Academy</a></li>
+			<li><a href="raj%20Silk%20Industry.html">Silk Industry</a></li>
+			<li><a href="raj%20Shaheed%20A.H.M.%20Central%20Park%20&%20Zoo.html">Shaheed A.H.M. Central Park & Zoo</a></li>
+			<li><a href="raj%20Gopal%20Mandir.html">Gopal Mandir</a></li>
+            <li><a href="raj%20puthia%20rajbari.html">Puthia Rajbari</a></li>
+            <li><a href="raj%20safina%20park.html">Safina Park</a></li>
+            <li><a href="raj%20zia%20park.html">Shahid Zia Shishu Park</a></li>
+
+    
+    
+    
+    <li><a href="ctg%20Potenga%20Sea%20Beach.html">Potenga Sea Beach</a></li> 
+            <li><a href="ctg%20Chittagong%20University.html">Chittagong University</a></li> 
+            <li><a href="ctg%20Zia%20Memorial%20Museum.html">Zia Memorial Museum</a></li> 
+            <li><a href="ctg Ananda Bhuban.html">Ananda Bhuban (Mini Bangladesh)</a></li> 
+            <li><a href="ctg Andorkilla Shahi Mosque.html">Andorkilla Shahi Mosque</a></li> 
+            <li><a href="ctg Bashkhali Ecopark.html">Bashkhali Ecopark</a></li> 
+            <li><a href="ctg Batali Hill.html">Batali Hill</a></li> 
+            <li><a href="ctg%20Butterfly%20Park.html">Butterfly Park</a></li> 
+            <li><a href="ctg%20Chandranath%20Hill%20&%20Temple.html">Chandranath Hill & Temple</a></li> 
+            <li><a href="ctg%20Chittagong%20Buddhist%20Temple.html">Chittagong Buddhist Temple</a></li> 
+            <li><a href="ctg%20Chittagong%20Shishu%20Park.html">Chittagong Shishu Park</a></li>
+            <li><a href="ctg%20Foy's%20Lake.html">Foy's Lake</a></li>
+            <li><a href="ctg%20Victoria%20College.html">Cumilla Victoria Government College</a></li>
+            <li><a href="ctg%20Cox%E2%80%99s%20Bazar%20Sea%20Beach.html">Cox's Bazar Sea Beach</a></li> 
+            <li><a href="ctg%20Teknaf%20Sea%20Beach.html">Teknaf Sea Beach</a></li> 
+            <li><a href="ctg%20Inani%20Beach.html"></a>Inani Beach</li>
+            <li><a href="ctg%20Kolatoli%20Beach.html">Kolatoli Beach</a></li>
+            <li><a href="ctg%20St.%20Martin's%20Island.html">St. Martin's Island</a></li>
+            <li><a href="ctg%20himchari.html">Himchhari National Park</a></li>
+            <li><a href="ctg%20Sangu%20River.html">Sangu River</a></li>
+            <li><a href="ctg%20Horinmara%20Kundo%20Waterfall.html">Horinmara Kundo Waterfall</a></li>
+            <li><a href="ctg%20Kutubdia%20Light%20House.html">Kutubdia Light House</a></li>
+            <li><a href="ctg%20Himchhari%20Waterfall.html">Himchhari Waterfall</a></li>
+            <li><a href="ctg%20Kutubdia%20Island.html">Kutubdia Island</a></li>
+    
+    
+    
+     <li><a href="khu%20Gollamari.html">Gollamari</a></li> 
+            <li><a href="khu%20Shiromoni.html">Shiromoni</a></li> 
+            <li><a href="khu%20Sundarbans.html">Sundarbans</a></li> 
+            <li><a href="khu%20Bokultala,%20Office%20of%20DC.html">Bokultala, Office of DC</a></li> 
+            <li><a href="khu%20Hiron%20Poient.html">Hiron Poient</a></li> 
+            <li><a href="khu%20Hardboard%20Mill.html">Hardboard Mill</a></li> 
+            <li><a href="khu%20Newsprint%20Mill.html">Newsprint Mill</a></li> 
+            <li><a href="khu%20Ship-Building%20Area.html">Ship-Building Area</a></li> 
+            <li><a href="khu%20Prem-kanon.html">Prem-kanon</a></li> 
+            <li><a href="khu%20Khulna%20University.html">Khulna University</a></li>
+            <li><a href="khu%20Shat%20Gombuj%20Mosque.html">Shat Gombuj Mosque</a></li>
+            <li><a href="khu%20Mongla%20Sea%20Port.html">Mongla Sea Port</a></li>
+            <li><a href="khu%20Bagerhat%20Museum.html">Bagerhat Museum</a></li>
+            <li><a href="khu%20Bibi%20Begni%20Mosque.html">Bibi Begni Mosque</a></li>
+            <li><a href="khu%20Nine%20Dome%20Mosque.html">Nine Dome Mosque</a></li>
+            <li><a href="khu%20one%20Dome%20Mosque.html">One Dome Singair Mosque</a></li>
+            <li><a href="khu%20Khan%20Jahan%20Ali's%20Tomb%20Complex.html">Khan Jahan Ali's Tomb</a></li>
+            <li><a href="khu%20Shilaidaha%20Kuthibari.html">Shilaidaha Kuthibari</a></li>
+    
+    
+    
+    
+     <li><a href="#">Ali Amjad's Clock Tower</a></li>
+			<li><a href="syl%20Gour%20Govinda%20Fort.html">Gour Govinda Fort</a></li>
+			<li><a href="syl%20Jaflong.html">Jaflong</a></li>
+			<li><a href="syl%20Jainta%20Rajbari(Palace).html">Jainta Rajbari(Palace)</a></li>
+			<li><a href="syl%20Kean%20Bridge.html">Kean Bridge</a></li>
+			<li><a href="syl%20M.C%20College.html">M.C College</a></li>
+			<li><a href="syl%20Monipuri%20Rajbari%20(Palace).html">Monipuri Rajbari (Palace)</a></li>
+			<li><a href="syl%20Shahi%20Eidgah.html">Shahi Eidgah</a></li>
+			<li><a href="syl%20Osmani%20Museum.html">Osmani Museum</a></li>
+            <li><a href="syl%20Shahjalal%20University%20of%20Science%20and%20Technology.html">Shahjalal University of Science and Technology (SUST)</a></li>
+    
+    
+    
+    
+     <li><a href="rang%20Bhinno%20Jogot.html">Bhinno Jogot</a></li> 
+            <li><a href="rang%20Chicli%20vata.html">Chicli vata</a></li> 
+            <li><a href="rang%20Pairabondh%20Museum.html">Pairabondh Museum</a></li> 
+            <li><a href="rang%20Pairabondh%20Wemen's%20Collage.html">Pairabondh Wemen's Collage</a></li> 
+            <li><a href="rang%20Rangpur%20Zoo.html">Rangpur Zoo</a></li> 
+            <li><a href="rang%20Tajhat%20Palace.html">Tajhat Palace</a></li> 
+            <li><a href="rang%20Town%20Hall.html">Town Hall</a></li> 
+            <li><a href="rang%20Shympur%20Sugar%20Mill.html">Shympur Sugar Mill</a></li>
+    
+    
+    
+    
+     <li><a href="bar Brojomohan University College.html">Brojomohan University College</a></li>
+			<li><a href="bar Village of Sher-e-Bangla Chakher.html">Village of Sher-e-Bangla Chakher</a></li>
+			<li><a href="bar Durgasagor Lake.html">Durgasagor Lake</a></li>
+			<li><a href="bar Oxford Mission Church.html">Oxford Mission Church</a></li>
+			<li><a href="bar Ashwini Kumar Town Hall.html">Ashwini Kumar Town Hall</a></li>
+			<li><a href="bar Bells Park.html">Bells Park</a></li>
+			<li><a href="bar Vatikhanar Jora MashjidTwin Mosque of Vatikhana.html">Vatikhanar Jora Mashjid/Twin Mosque of Vatikhana</a></li>
+            <li><a href="bar The Bangabandhu Uddan.html">The Bangabandhu Uddan</a></li> 
+             <li><a href="bar%20Kuakata%20Sea%20Beach.html">Kuakata Sea Beach</a></li>
+    
+    
+    
+    
+      <li><a href="mym%20Bangladesh%20Agricultural%20University.html">Bangladesh Agricultural University</a></li>
+			<li><a href="mym%20Women%20Cadet%20College.html">Women Cadet College</a></li>
+			<li><a href="mym%20Collection%20of%20Joynul%20Abedin.html">Collection of Joynul Abedin</a></li>
+			<li><a href="mym%20Muktagacha%20Jamidar%20Bari.html">Muktagacha Jamidar Bari</a></li>
+			<li><a href="mym%20Nazrul%20Academy,%20Garo%20Hilltracts.html">Nazrul Academy, Garo Hilltracts</a></li>
+			<li><a href="mym%20Mymenshing%20Museum.html">Mymenshing Museum</a></li>
+			<li><a href="mym%20Anandamohan%20College.html">Anandamohan College</a></li>
+			<li><a href="mym%20Kobi%20Nazrul%20University.html">Kobi Nazrul University</a></li>
+			<li><a href="mym%20Crocodile%20Firm.html">Crocodile Firm</a></li> 
+    
+
+    
+    
+    
+</ul>
+
+<script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+          </script>  
+            
+            </div>  
+            
+    
+        </div>
+            
+      
+        
+	</body>
+</html>

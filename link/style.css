@@ -1,0 +1,521 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+div.cont {
+     padding: 1em;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.header{
+    
+	width: 100%;
+	height: 100px;
+	
+}
+
+
+.headf{
+    float:left; 
+	width: 40%;
+	height: 100px;
+	background-color: white;
+}
+.headf p{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+   
+}
+.heads{
+    float:right; 
+	width: 60%;
+	height: 100px;
+	background-color: white;
+}
+.headsf{
+    float:left; 
+	width: 100%;
+	height: 50%;
+	background-color: white;
+}
+
+.ept{
+      float:left; 
+	width: 60%;
+	height: 100%;
+	background-color: white;
+}
+.blk{
+      float:left; 
+	width: 0.5%;
+	height: 100%;
+	background-color: white;
+}
+.fac{
+      float:left; 
+	width: 8%;
+	height: 100%;
+	background-color: white;
+}
+.twi{
+      float:left; 
+	width: 8%;
+	height: 100%;
+	background-color: white;
+}
+.goo{
+      float:left; 
+	width: 8%;
+	height: 100%;
+	background-color: white;
+}
+.you{
+      float:left; 
+	width: 10%;
+	height: 100%;
+	background-color: white;
+}
+
+
+
+.fac p{
+  margin-top: 5px;
+    
+}
+.twi p{
+    margin-top: 5px;
+    
+}
+.goo p{
+    margin-top: 5px;
+    
+}
+.you p{
+    margin-top: 5px;
+    
+}
+.headss{
+      float:left; 
+	width: 100%;
+	height: 50%;
+	background-color: white;
+}
+
+.headsss{
+      float:left; 
+	width: 40%;
+	height: 100%;
+	background-color: red;
+}
+.headssf{
+      float:left; 
+	width: 60%;
+	height: 100%;
+	background-color: white;
+}
+.headsss a{
+	text-decoration:none;
+   color: white;
+}
+.log{
+      float:right; 
+	width: 10%;
+	height: 100%;
+     margin-right:100px;
+     margin-top: 12px;
+}
+.reg{
+      float:right; 
+	width: 10%;
+	height: 100%;
+     margin-right:110px;
+     margin-top: 12px;
+}
+.bar{
+    
+	width: 100%;
+	height: 50px;
+	background-color:blueviolet;
+}
+.spc{
+    float:left; 
+    width: 12%;
+	height: 100%;
+	
+}
+.home{
+    float:left; 
+     width: 88%;
+	height: 50px;
+	
+}
+.home a{
+text-decoration: none;
+}
+
+.imageset{
+    width: 100%;
+	height: 380px;
+
+}
+.tour{
+	width: 100%;
+	height: 60px;
+	text-align:center;
+	background-color: white;
+	
+}
+.ist
+{
+   	width: 100%;
+	height: 420px;
+	
+}
+
+
+.tourist{
+    
+	width: 65%;
+	height: 420px;
+	background-color: palegreen;
+    float: left;
+}
+.ent{
+    width: 100%;
+	height: 320px;
+	background-color: blue;
+    float: left;
+}
+
+.iframe{
+    width: 35%;
+	height: 420px;
+    float: right;
+   
+}
+.fra{
+    width: 100%;
+	height: 30px;
+      background-color:  blueviolet;
+  
+}
+
+.dx{
+     width: 100%;
+	height: 390px;
+    background-color:  green;
+}
+.dx a{
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ margin-left: 170px;
+   
+    
+}
+.spcd{
+    float:left; 
+    width: 1%;
+	height: 100%; 
+}
+
+
+
+.resturent{
+	width: 100%;
+	height: 60px;
+	text-align:center;
+	background-color: white;
+	
+}
+.hotels{
+    
+	width: 100%;
+	height: 540px;
+	background-color: white;
+}
+.hot{
+    width: 100%;
+	height: 270px;
+	background-color: white;
+}
+.hotelb{
+    width: 100%;
+	height: 270px;
+	background-color: white;
+}
+.gapa{float:left; 
+      width: 16%;
+	height: 270px;
+	background-color: white;
+}
+
+.sprmc{
+      float:left; 
+	width: 4%;
+	height: 270px;
+	background-color: white;
+}
+.dhakas{
+    float:left; 
+	width: 20%;
+	height: 250px;
+    border: 2px solid blueviolet;
+	
+}
+.dhakas a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakaz{
+     float:left; 
+	width: 100%;
+	height: 5px;
+   background-color: blueviolet;
+}
+.dhakb{
+     float:left; 
+	width: 35%;
+	height: 20px;
+background-color: blueviolet;
+}
+.dhakc{
+     float:left; 
+	width: 30%;
+	height: 20px;
+    background-color: white;
+}
+.dhakd{
+     float:left; 
+	width: 29%;
+	height: 20px;
+    background-color: blueviolet;
+}
+.dhakr{
+     float:left; 
+	width: 42%;
+	height: 20px;
+    background-color: white;
+}
+.raj{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet;
+}
+.raj a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakaza{
+     float:left; 
+	width: 100%;
+	height: 5px;
+    background-color: blueviolet;
+}
+.dhake{
+     float:left; 
+	width: 22.5%;
+	height: 20px;
+   background-color: blueviolet;
+}
+.dhakch{
+     float:left; 
+	width: 55%;
+	height: 20px;
+    background-color: white;
+}
+.dhakazaa{
+     float:left; 
+	width: 100%;
+	height: 5px;
+    background-color: blueviolet;
+}
+
+.chi{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet;
+}
+.chi a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakazac{
+     float:left; 
+	width: 100%;
+	height: 5px;
+    background-color: blueviolet; 
+
+}
+.khu{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet; 
+}
+.khu a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakcin{
+     float:left; 
+	width: 35%;
+	height: 20px;
+    background-color: white;
+}
+.dhakbac{
+     float:left; 
+	width: 32.5%;
+	height: 20px;
+background-color: blueviolet; 
+}
+
+.shy{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet;
+}
+.shy a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakconish{
+     float:left; 
+	width: 35%;
+	height: 20px;
+    background-color: white;
+}
+.dhakazza{
+     float:left; 
+	width: 100%;
+	height: 5px;
+   background-color: blueviolet;
+}
+.dhakbzab{
+     float:left; 
+	width: 32.5%;
+	height: 20px;
+   background-color: blueviolet;
+}
+.dhakar{
+     float:left; 
+	width: 29%;
+	height: 20px;
+       background-color: blueviolet;
+}
+.dhakrun{
+     float:left; 
+	width: 42%;
+	height: 20px;
+    background-color: white;
+}
+.dhakazobc{
+     float:left; 
+	width: 100%;
+	height: 5px;
+   background-color: blueviolet;
+}
+.ran{
+    float:left; 
+	width: 20%;
+	height:250px;
+	border: 2px solid blueviolet;
+}
+.ran a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakazrra{
+     float:left; 
+	width: 100%;
+	height: 5px;
+   background-color: blueviolet;
+}
+.dhakboss{
+     float:left; 
+	width: 30%;
+	height: 20px;
+       background-color: blueviolet;
+}
+.bari{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet;
+}
+.bari a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.dhakcbar{
+     float:left; 
+	width: 40%;
+	height: 20px;
+    background-color: white;
+}
+.dhakma{
+     float:left; 
+	width: 24%;
+	height: 20px;
+    background-color: blueviolet;
+}
+.dhakazaaa{
+     float:left; 
+	width: 100%;
+	height: 5px;
+   background-color: blueviolet;
+}
+.dhakmon{
+     float:left; 
+	width: 52%;
+	height: 20px;
+    background-color: white;
+}
+.moy{
+    float:left; 
+	width: 20%;
+	height: 250px;
+	border: 2px solid blueviolet;
+}
+.moy a{
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.number{
+	width: 100%;
+	height: 60px;
+	text-align:center;
+	background-color: white;
+	
+}
+.emergency{
+    
+	width: 100%;
+	height: 300px;
+	background-color: greenyellow;
+}
+
+
+
+.footer{
+	width: 100%;
+	height: 100px;
+	background-color: #3F51B5;
+}
+

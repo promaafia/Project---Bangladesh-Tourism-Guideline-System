@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    
+    <link href='dhaka.css' rel='stylesheet'>
+    </head>
+<body>
+ <div class="mapdiv">
+    <div class="mapv">
+ <div id="map" style="width:100%;height:100%"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(24.904539,91.86110110000004);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 11};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWuPo5uxsUZ-zrfRoR4nQv_abOcsfoa90&callback=myMap"></script>
+    </div>
+     
+   
+     
+    </div>
+</body>
+
+</html>
